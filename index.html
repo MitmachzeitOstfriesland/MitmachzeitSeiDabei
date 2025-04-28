@@ -5,124 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mitmachzeit Ostfriesland</title>
   <style>
-    body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #fffdf9; color: #333; }
-    header { background-color: #ffa726; color: white; padding: 2rem; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5rem; }
-    header p { font-size: 1.2rem; }
-    section { padding: 2rem; max-width: 900px; margin: 0 auto; }
-    h2 { color: #ffa726; }
-    .angebot, .vorteile { background-color: #f3f9f9; border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
-    .galerie-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-    .galerie-section img { max-width: 100%; height: auto; border-radius: 8px; }
-    footer { background-color: #00695c; color: white; text-align: center; padding: 1rem; }
-    .button { display: inline-block; margin-top: 1rem; padding: 0.8rem 1.2rem; background-color: #ffa726; color: white; border-radius: 8px; text-decoration: none; font-weight: bold; }
-    ul { padding-left: 1.2rem; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffdf9;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background-color: #ffa726;
+      padding: 2rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      color: white;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 1rem 0 2rem;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin: 2rem;
+    }
+    .button {
+      padding: 1rem 2rem;
+      background-color: #00695c;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #004d40;
+    }
+    footer {
+      margin-top: 3rem;
+      background-color: #00695c;
+      color: white;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Mitmachzeit Ostfriesland</h1>
-    <p>Kindergeburtstage & Events – SeiDabei auf Tour oder vor Ort</p>
-  </header>
 
-  <section>
-    <h2>Willkommen bei Mitmachzeit</h2>
-    <p>Mitmachzeit Ostfriesland bringt kreative Erlebnisse direkt zu euch! Ob bunter Bastelbus, fantasievolle Geburtstagsfeier oder spannende Mitmachaktionen – wir gestalten besondere Momente für Kinder und Familien.</p>
-  </section>
+<header>
+  <h1>Mitmachzeit Ostfriesland</h1>
+  <p>Willkommen bei deiner kreativen Erlebniswelt!</p>
 
-  <section class="angebot">
-    <h2>Unsere Angebote</h2>
-    <ul>
-      <li>🎨 Kreativwerkstatt im Bastelbus</li>
-      <li>🏰 Events im Museum, auf dem Hof oder bei euch zuhause</li>
-      <li>🎉 Individuell geplante Kindergeburtstage</li>
-      <li>📅 Ferienprogramme & Mitmachaktionen</li>
-    </ul>
-  </section>
+  <img src="Farbkoerperblau.jpg" alt="Fliegende Farbkörper" style="width: 80%; max-width: 600px; margin: 2rem auto; display: block; border-radius: 12px;">
+</header>
 
-  <section class="vorteile">
-    <h2>Warum Mitmachzeit?</h2>
-    <p><strong>Mitmachzeit steht für echte Erlebnisse – kreativ, lebendig und voller Freude.</strong><br>
-    Wir glauben daran, dass Kinder durch eigenes Tun wachsen, entdecken und strahlen.<br>
-    Deshalb gestalten wir Räume, in denen Fantasie Wirklichkeit werden darf – mobil, nah und mit Herz.</p>
-  </section>
-  
-<figure>
-  <img src="BastiBus.jpg" alt="BastiBus" style="width:100%; border-radius:8px;">
-  <figcaption>Mit dem BastiBus auf kreative Abenteuerreise!</figcaption>
-</figure>
-  
-  <section>
-  <h2>Sei dabei – Mitmachzeit: Eine Erinnerung, die bleibt</h2>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; padding-top: 1rem;">
+<div class="button-container">
+  <a class="button" href="bastibus.html">🚐 Entdecke den BastiBus</a>
+  <a class="button" href="galerie.html">🖼️ Unsere kreative Galerie</a>
+  <a class="button" href="projekte.html">🎨 Weitere Mitmachprojekte</a>
+</div>
 
- <figure>
-  <img src="BastiBus Holzmotive (13).JPG" alt="Delfin" style="width:100%; border-radius:8px;">
-  <figcaption>Delfinträume: Mit Holz in ferne Meere reisen</figcaption>
-</figure>
+<footer>
+  &copy; 2025 Mitmachzeit Ostfriesland – Alle Rechte vorbehalten
+</footer>
 
-<figure>
-  <img src="BastiBus Holzmotive (7).jpg" alt="Dinos" style="width:100%; border-radius:8px;">
-  <figcaption>Dinos aus der Urzeit – selbst gebaut, selbst entdeckt</figcaption>
-</figure>
-
-<figure>
-  <img src="BastiBus Holzmotive (10).JPG" alt="Steckenpferde" style="width:100%; border-radius:8px;">
-  <figcaption>Steckenpferde galoppieren ins Abenteuerland</figcaption>
-</figure>
-
-<figure>
-  <img src="BastiBus Holzmotive (8).jpg" alt="Vögel" style="width:100%; border-radius:8px;">
-  <figcaption>Vögel zum Verlieben – kleine Futterstationen für große Freude</figcaption>
-</figure>
-
-<figure>
-  <img src="BastiBus Holzmotive (12).jpg" alt="Boot" style="width:100%; border-radius:8px;">
-  <figcaption>Boote voller Fantasie – Kurs auf neue Ufer!</figcaption>
-</figure>
-
-<figure>
-  <img src="BastiBus Holzmotive (9).JPG" alt="Stiftebox" style="width:100%; border-radius:8px;">
-  <figcaption>Stifteboxen: wo bunte Ideen ihr Zuhause finden</figcaption>
-</figure>
-
-<figure>
-  <img src="BastiBus Holzmotive (11).jpg" alt="BastiBus als Stiftebox" style="width:100%; border-radius:8px;">
-  <figcaption>Ein BastiBus als Stiftebox – Kreativität auf vier Rädern</figcaption>
-</figure>
-
-<figure>
-  <img src="BastiBus Nähbus (1).jpg" alt="Tasche 1" style="width:100%; border-radius:8px;">
-  <figcaption>Taschenkunst für Nachwuchsdesigner:innen</figcaption>
-</figure>
-
-<figure>
-  <img src="BastiBus Nähbus (2).jpg" alt="Tasche 2" style="width:100%; border-radius:8px;">
-  <figcaption>Knöpfe, Farben, Fantasie – die Nähwerkstatt lebt!</figcaption>
-</figure>
-
-  </div>
-</section>
-
-  <section>
-    <h2>Buchung & Kooperationen</h2>
-    <p><strong>Du willst den BastiBus buchen?</strong><br>
-    ➡️ Dann geht’s hier weiter zu <a href="https://www.basti-bus.de" target="_blank">www.basti-bus.de</a><br>
-    (Trägerverein: Eine Zukunft für Kinder e.V.)</p>
-    <p><strong>Ein kreatives Event im Museum oder in unserer Holzwerkstatt?</strong><br>
-    ➡️ Das läuft über unsere Partnerseite <a href="#">Miraculum Aurich</a> – einfach dort reinschauen und Wunschtermin sichern!</p>
-  </section>
-
-  <section>
-    <h2>Kontakt</h2>
-    <p>Du hast Fragen oder möchtest selbst Mitmacher:in werden?<br>
-    Schreib uns einfach über unsere Facebookseite:</p>
-    <a class="button" href="https://www.facebook.com/mitmachzeitostfriesland">Facebookseite besuchen</a>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Mitmachzeit Ostfriesland – Alle Rechte vorbehalten</p>
-  </footer>
 </body>
 </html>
-
