@@ -10,45 +10,54 @@
       font-family: 'Poppins', sans-serif;
       background-color: #fffdf9;
       color: #333;
-      text-align: center;
     }
     header {
       background-color: #ffa726;
       padding: 2rem;
+      text-align: center;
     }
     header h1 {
       margin: 0;
       font-size: 2.8rem;
       color: white;
     }
-    p {
-      font-size: 1.2rem;
-      margin: 1rem 0 2rem;
-    }
-    .button-container {
-      display: flex;
-      flex-direction: column;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
-      margin: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
-    .button {
-      padding: 1rem 2rem;
-      background-color: #00695c;
-      color: white;
-      border: none;
+    .kachel {
+      background-color: #f3f9f9;
       border-radius: 12px;
-      font-size: 1.2rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
       text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s;
+      color: inherit;
     }
-    .button:hover {
-      background-color: #004d40;
+    .kachel:hover {
+      transform: scale(1.05);
+    }
+    .kachel img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .kachel-text {
+      padding: 1rem;
+      font-size: 1.1rem;
+      font-weight: bold;
     }
     footer {
       margin-top: 3rem;
       background-color: #00695c;
       color: white;
+      text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
     }
@@ -58,15 +67,53 @@
 
 <header>
   <h1>Mitmachzeit Ostfriesland</h1>
-  <p>Willkommen bei deiner kreativen Erlebniswelt!</p>
-
-  <img src="Farbkoerperblau1.jpg" alt="Fliegende Farbkörper" style="width: 80%; max-width: 600px; margin: 2rem auto; display: block; border-radius: 12px;">
 </header>
 
-<div class="button-container">
-  <a class="button" href="bastibus.html">🚐 Entdecke den BastiBus</a>
-  <a class="button" href="galerie.html">🖼️ Unsere kreative Galerie</a>
-  <a class="button" href="projekte.html">🎨 Weitere Mitmachprojekte</a>
+<div class="grid">
+  <a href="ueberuns.html" class="kachel">
+    <img src="Kunst_Kachel.jpg" alt="Über uns">
+    <div class="kachel-text">👥 Klaus & das Team</div>
+  </a>
+
+  <a href="bastibus.html" class="kachel">
+    <img src="BastBus_Kachel.jpg" alt="BastiBus">
+    <div class="kachel-text">🎨 Mit dem BastiBus auf kreativer Fahrt!</div>
+  </a>
+
+  <a href="museum-kunstschule.html" class="kachel">
+    <img src="Museum_Kachel.jpg" alt="MachMitMuseum & Kunstschule">
+    <div class="kachel-text">🏛️ Erleben, Forschen, Gestalten!</div>
+  </a>
+
+  <a href="kunstprojekte.html" class="kachel">
+    <img src="Wer_Kachel.JPG" alt="Kunstprojekte">
+    <div class="kachel-text">🖌️ Malen, Werken, Zeichnen!</div>
+  </a>
+
+  <a href="sonderaktionen.html" class="kachel">
+    <img src="Sonder_Kachel.JPG" alt="Sonderaktionen">
+    <div class="kachel-text">🎁 Besondere Events & Aktionen</div>
+  </a>
+
+  <a href="workshops.html" class="kachel">
+    <img src="Wege_Kachel.JPG" alt="Workshops">
+    <div class="kachel-text">📚 Workshops & Elternschule</div>
+  </a>
+
+  <a href="empfehlungen.html" class="kachel">
+    <img src="Buch_Kachel.JPG" alt="Bücher & Empfehlungen">
+    <div class="kachel-text">📖 Bücher & Kreativtipps</div>
+  </a>
+
+  <a href="extrastark.html" class="kachel">
+    <img src="Löwen_Kachel.JPG" alt="Extra Stark Geburtstage">
+    <div class="kachel-text">💪 Abenteuer-Geburtstage mit GPS!</div>
+  </a>
+
+  <a href="holzkunst.html" class="kachel">
+    <img src="Holz_Kachel.JPG" alt="Holz kreativ">
+    <div class="kachel-text">🪵 Holzträume verwirklichen</div>
+  </a>
 </div>
 
 <footer>
