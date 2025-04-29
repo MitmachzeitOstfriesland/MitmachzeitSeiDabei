@@ -1,6 +1,66 @@
 
 <!DOCTYPE html>
 <html lang="de">
-<head><meta charset="UTF-8"><title>BastiBus</title></head>
-<body><h1>BastiBus – Mitmachzeit Ostfriesland</h1></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BastiBus – Mitmachzeit Ostfriesland</title>
+  <style>
+    body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #fffdf9; color: #333; }
+    header { background-color: #ffa726; padding: 2rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2.4rem; color: white; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .kachel {
+      background-color: #f3f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: transform 0.3s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .kachel:hover { transform: scale(1.05); }
+    footer {
+      margin-top: 3rem;
+      background-color: #00695c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>BastiBus Ostfriesland</h1>
+</header>
+
+<section style="padding: 2rem; text-align: center;">
+  <p>Willkommen an Bord unseres bunten Bastelbusses! 🎨🚐<br>Hier findest du alles, was wir auf Rädern zaubern können – kreativ, mobil und mit ganz viel Herz.</p>
+</section>
+
+<div class="grid">
+  <a href="#" class="kachel">🚌 Der BastiBus<br><small>Was dich erwartet</small></a>
+  <a href="#" class="kachel">🎉 Events & Highlights<br><small>Geburtstage, Stadtfeste & mehr</small></a>
+  <a href="galerie.html" class="kachel">📸 Galerie<br><small>Fotos & Eindrücke</small></a>
+  <a href="#" class="kachel">🎬 Video (bald)<br><small>Kleine Einblicke zum Reinschnuppern</small></a>
+</div>
+
+<footer>
+  &copy; 2025 Mitmachzeit Ostfriesland – Alle Rechte vorbehalten
+</footer>
+
+</body>
 </html>

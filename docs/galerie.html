@@ -1,8 +1,57 @@
 
 <!DOCTYPE html>
 <html lang="de">
-<head><meta charset="UTF-8"><title>Galerie</title></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie – Mitmachzeit Ostfriesland</title>
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #fffdf9; margin: 0; padding: 0; }
+    header { background-color: #ffa726; color: white; text-align: center; padding: 2rem; }
+    .galerie {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .galerie img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .galerie img:hover { transform: scale(1.05); }
+    footer {
+      background-color: #00695c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
 <body>
-  <h1>Galerie – Einblicke in den BastiBus</h1>
+
+<header>
+  <h1>Galerie: Einblicke in den BastiBus</h1>
+</header>
+
+<main>
+  <div class="galerie">
+    <img src="BastiBus Holzmotive (7).jpg" alt="Beispielbild 1">
+    <img src="BastiBus Holzmotive (8).jpg" alt="Beispielbild 2">
+    <img src="BastiBus Holzmotive (9).JPG" alt="Beispielbild 3">
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Mitmachzeit Ostfriesland – Alle Rechte vorbehalten
+</footer>
+
 </body>
 </html>
