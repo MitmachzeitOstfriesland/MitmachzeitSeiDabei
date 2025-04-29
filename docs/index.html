@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -23,7 +24,7 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.5rem;
       padding: 2rem;
       max-width: 1200px;
@@ -35,16 +36,21 @@
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       overflow: hidden;
       text-align: center;
-      padding: 2rem;
+      padding: 1rem;
       transition: transform 0.3s;
       cursor: pointer;
       text-decoration: none;
       color: inherit;
       font-weight: bold;
-      font-size: 1.2rem;
     }
     .kachel:hover {
       transform: scale(1.05);
+    }
+    .kachel img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
     }
     footer {
       margin-top: 3rem;
@@ -62,13 +68,59 @@
   <h1>Mitmachzeit Ostfriesland</h1>
 </header>
 
-<section style="padding: 2rem; text-align: center; font-size: 1.2rem;">
+<section style="text-align: center; padding: 1rem 2rem;">
   <p>🎈 Kreative Kindergeburtstage, fantasievolle Events und bunte Erlebnisse – für kleine Entdecker:innen, kreative Köpfe und große Abenteuerlust!</p>
 </section>
 
 <div class="grid">
-  <a href="bastibus.html" class="kachel">🎨 BastiBus</a>
-  <a href="galerie.html" class="kachel">📸 Galerie</a>
+  <a href="bastibus.html" class="kachel">
+    <img src="Bastibus.jpg" alt="BastiBus">
+    <div>🎨 Mit dem BastiBus auf kreativer Fahrt!</div>
+  </a>
+  <a href="museum-kunstschule.html" class="kachel">
+    <img src="Museum_Kachel.jpg" alt="Kunstschule">
+    <div>🏛️ Erleben, Forschen, Gestalten!</div>
+  </a>
+  <a href="holzkunst.html" class="kachel">
+    <img src="Holz_Kachel.JPG" alt="Holz kreativ">
+    <div>🪵 Holzträume verwirklichen</div>
+  </a>
+  <a href="sonderaktionen.html" class="kachel">
+    <img src="Sonder_Kachel.JPG" alt="Sonderaktionen">
+    <div>🎁 Besondere Events & Aktionen</div>
+  </a>
+  <a href="workshops.html" class="kachel">
+    <img src="Wege_Kachel.JPG" alt="Workshops">
+    <div>📚 Workshops & Elternschule</div>
+  </a>
+  <a href="empfehlungen.html" class="kachel">
+    <img src="Buch_Kachel.JPG" alt="Bücher">
+    <div>📖 Bücher & Kreativtipps</div>
+  </a>
+  <a href="extrastark.html" class="kachel">
+    <img src="Löwen_Kachel.JPG" alt="Extra Stark">
+    <div>💪 Abenteuer-Geburtstage mit GPS!</div>
+  </a>
+  <a href="ferienprogramme.html" class="kachel">
+    <img src="Buch_Kachel.JPG" alt="Ferienprogramm">
+    <div>🌞 Kreative Feriencamps!</div>
+  </a>
+  <a href="galerie.html" class="kachel">
+    <img src="Ich_Kachel.JPG" alt="Galerie">
+    <div>📸 Galerie & Eindrücke</div>
+  </a>
+  <a href="neuigkeiten.html" class="kachel">
+    <img src="WerWoWas_Kachel.JPG" alt="Aktuelles">
+    <div>📰 Neuigkeiten & Aktuelles</div>
+  </a>
+  <a href="projekte.html" class="kachel">
+    <img src="Wer_Kachel.JPG" alt="Projekte">
+    <div>🖌️ Malen, Werken, Zeichnen</div>
+  </a>
+  <a href="ueberraschung.html" class="kachel">
+    <img src="Ich_Kachel.JPG" alt="Überraschung">
+    <div>🔮 Magie & Abenteuer</div>
+  </a>
 </div>
 
 <footer>
