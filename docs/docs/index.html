@@ -1,9 +1,76 @@
 
 <!DOCTYPE html>
 <html lang="de">
-<head><meta charset="UTF-8"><title>Startseite</title></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitmachzeit Ostfriesland</title>
+  <style>
+    body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #fffdf9; color: #333; }
+    header { background-color: #ffa726; padding: 2rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2.8rem; color: white; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .kachel {
+      background-color: #f3f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .kachel:hover { transform: scale(1.05); }
+    .kachel img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .kachel-text {
+      padding: 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    footer {
+      margin-top: 3rem;
+      background-color: #00695c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
 <body>
+<header>
   <h1>Mitmachzeit Ostfriesland</h1>
-  <a href="bastibus.html">Zum BastiBus</a>
+</header>
+<section style="text-align: center; padding: 1rem 2rem;">
+  <p>🎈 Kreative Kindergeburtstage, fantasievolle Events und bunte Erlebnisse – für kleine Entdecker:innen, kreative Köpfe und große Abenteuerlust!</p>
+</section>
+<div class="grid">
+  <a href="bastibus.html" class="kachel"><img src="BastiBus.jpg"><div class="kachel-text">🎨 BastiBus</div></a>
+  <a href="museum-kunstschule.html" class="kachel"><img src="Museum_Kachel.jpg"><div class="kachel-text">🏛️ Kunstschule</div></a>
+  <a href="holzkunst.html" class="kachel"><img src="Holz_Kachel.JPG"><div class="kachel-text">🪵 Holz kreativ</div></a>
+  <a href="sonderaktionen.html" class="kachel"><img src="Sonder_Kachel.JPG"><div class="kachel-text">🎁 Sonderaktionen</div></a>
+  <a href="workshops.html" class="kachel"><img src="Wege_Kachel.JPG"><div class="kachel-text">📚 Workshops</div></a>
+  <a href="empfehlungen.html" class="kachel"><img src="Buch_Kachel.JPG"><div class="kachel-text">📖 Empfehlungen</div></a>
+  <a href="extrastark.html" class="kachel"><img src="Löwen_Kachel.JPG"><div class="kachel-text">💪 Extra Stark</div></a>
+  <a href="ferienprogramme.html" class="kachel"><img src="Buch_Kachel.JPG"><div class="kachel-text">🌞 Ferienprogramme</div></a>
+  <a href="galerie.html" class="kachel"><img src="Ich_Kachel.JPG"><div class="kachel-text">📸 Galerie</div></a>
+  <a href="neuigkeiten.html" class="kachel"><img src="WerWoWas_Kachel.JPG"><div class="kachel-text">📰 Neuigkeiten</div></a>
+  <a href="projekte.html" class="kachel"><img src="Wer_Kachel.JPG"><div class="kachel-text">🖌️ Kunstprojekte</div></a>
+  <a href="ueberraschung.html" class="kachel"><img src="Ich_Kachel.JPG"><div class="kachel-text">🔮 Überraschung</div></a>
+</div>
+<footer>
+  &copy; 2025 Mitmachzeit Ostfriesland – Alle Rechte vorbehalten
+</footer>
 </body>
 </html>
